@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean and Affordable Energy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://avatars.githubusercontent.com/u/110486886?s=280&v=4">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/110486886?s=280&v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+            .main-section {
+                margin: 20px;
+                padding: 20px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .pointodd,.pointeven, .ngo{
+                display: flex;
+                background-color: #ffffff;
+                align-items: center;
+                margin-bottom: 20px;
+                padding: 20px;   
+            }
+            
+            #donation-links{
+                background-color: #ffffff;
+                align-items: center;
+                margin-bottom: 20px;
+                padding: 20px;  
+            }
+            
+            .pointodd .point-text {
+                margin-left: 200px;
+            }
+            .pointeven .point-text{
+                margin-right: 200px;
+            }
+
+            .point-text{
+                max-width: 500px;
+            }
+
+            .pointodd img,.pointeven img, .ngo img {
+                width: 360px;
+                height: 540px;
+                margin: 20px ;
+            }
+            .point-heading {
+                font-size: 36px;
+                font-family: 'Titillium Web', sans-serif; /* Replace with your desired solid font family */
+                color:#4CAF50; /* Replace with your desired color */
+                text-align: left;
+                margin: 0;
+                padding: 10px 0;
+            }
+            .ngo {
+                display: block; /* or any layout style you need */
+            }
+            a,b{
+                color: #4CAF50;
+                text-decoration: none;
+                transition:  color 0.3s , text-decoration 0.3s ;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+            .image {
+                width: 100%;
+                opacity: 0;
+                transform: translateX(-100%); /* Start off-screen to the left */
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+
+            .image.show {
+                opacity: 1;
+                transform: translateX(0); /* Slide to its original position */
+            }
+    </style> 
+
+    <div id="webbar">
+        <nav id="navbar">
+            <div class="logo">
+                <img src="https://avatars.githubusercontent.com/u/110486886?s=280&v=4" alt="Logo" class="logo">
+            </div>
+            <div class="container">
+                <h1>Clean and Affordable Energy</h1>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Takeaction.html" class="active">Take Action</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>  
+            </div> 
+            <div id="progress-bar"></div> 
+        </nav>  
+    </div>
+
+    <main>
+        <section class="main-section" id="what-can-you-do">
+            <h2>What Can You Do?</h2>
+            
+            <!-- First point: Image first, then description -->
+            <div class="pointodd">
+                
+                <img class="image" src="https://th.bing.com/th/id/OIP.z9URZiBaI54uxwrmd8At0QAAAA?rs=1&pid=ImgDetMain" alt="Energy Efficient Appliances">
+            
+                <div class="point-text">
+                    <h3 class="point-heading">1. Switch to Energy-Efficient Appliances</h3>
+                    <p>Upgrade your home with energy-efficient appliances and light bulbs to reduce energy consumption and save money on your utility bills.</p>
+                </div>
+            
+            </div>
+            
+            <!-- Second point: Description first, then image -->
+            <div class="pointeven">
+                <div class="point-text">
+                    <h3 class="point-heading">2. Consider Renewable Energy Sources</h3>
+                    <p>Install renewable energy sources like solar panels to power your home with clean energy and reduce your carbon footprint.</p>
+                </div>
+                <img class="image" src="https://cdn3.vectorstock.com/i/1000x1000/00/62/renewable-energy-infographic-vector-19370062.jpg" alt="Solar Panels">
+            </div>
+            
+            <!-- Third point: Image first, then description -->
+            <div class="pointodd">
+                <img class="image" style="width: 540px;" src="https://phabcart.imgix.net/cdn/scdn/images/uploads/sp111a3_web600.jpg" alt="Unplug Devices">
+                <div class="point-text">
+                    <h3 class="point-heading">3. Reduce Energy Consumption</h3>
+                    <p>Unplug devices when not in use to avoid unnecessary energy consumption and contribute to a more sustainable lifestyle.</p>
+                </div>
+            </div>
+            
+            <!-- Fourth point: Description first, then image -->
+            <div class="pointeven">
+                <div class="point-text">
+                    <h3 class="point-heading">4. Support Sustainable Energy Policies</h3>
+                    <p>Advocate for and support policies and initiatives that promote sustainable energy practices in your community and beyond.</p>
+                </div>
+                <img class="image" style="width: 436px; height: auto;" src="https://cdn.leverageedu.com/blog/wp-content/uploads/2020/04/29203536/3Rs-Reduce-Reuse-Recycle-1600x1531.png" alt="Support Policies">
+            </div>
+            
+            <!-- Fifth point: Image first, then description -->
+            <div class="pointodd">
+                <img class="image" src="https://c8.alamy.com/comp/2J4DFM6/educate-yourself-and-others-blue-gradient-concept-icon-2J4DFM6.jpg" alt="Educate Others">
+                <div class="point-text">
+                    <h3 class="point-heading">5. Educate Others</h3>
+                    <p>Spread the word about the benefits of clean energy and encourage others to make sustainable choices in their daily lives.</p>
+                </div>
+            </div>
+            
+            <!-- Sixth point: Description first, then image -->
+            <div class="pointeven">
+                <div class="point-text">
+                    <h3 class="point-heading">6. Use Public Transport or Carpool</h3>
+                    <p>Reduce your carbon footprint by using public transportation, carpooling, biking, or walking instead of driving alone.</p>
+                </div>
+                <img class="image" style="width: 540px; height: auto;" src="https://s-media-cache-ak0.pinimg.com/originals/91/3f/e2/913fe23acb2026fd803f3620b75e2a23.jpg" alt="Public Transport">
+            </div>
+        </section>
+
+        <section class="main-section" id="ngos-working">
+            <h2>NGOs Working on This</h2>
+            <p>Several non-governmental organizations (NGOs) are dedicated to promoting clean and sustainable energy. These organizations work on various fronts, including advocacy, education, and direct action to combat climate change. Here are some you can support:</p>
+            <div class="ngo">
+                <h3 class="point-heading">Greenpeace</h3>
+                <p>Greenpeace is a global, independent campaigning organization that uses peaceful protest and creative communication to expose global environmental problems and promote solutions that are essential for a green and peaceful future.</p>
+                <p><b>Mission and Goals:</b> Greenpeace aims to ensure the ability of the Earth to nurture life in all its diversity. It focuses on addressing the most crucial worldwide issues, such as climate change, deforestation, overfishing, and pollution. Greenpeace advocates for renewable energy, biodiversity protection, and sustainable development.</p>
+                <p><b>Key Activities:</b></p>
+                <ul>
+                    <li><b>Campaigns and Advocacy:</b> Greenpeace runs international campaigns to promote renewable energy sources like solar and wind, and to reduce reliance on fossil fuels. They lobby governments and corporations to implement environmentally-friendly policies.</li>
+                    <li><b>Direct Action:</b> The organization is known for its direct actions and peaceful protests, which aim to draw public attention to environmental injustices.</li>
+                    <li><b>Research and Reports:</b> Greenpeace conducts extensive scientific research and produces reports on various environmental issues, providing the public and policymakers with accurate and up-to-date information.</li>
+                    <li><b>Public Engagement:</b> They engage the public through awareness campaigns, encouraging people to take action and support environmental causes.</li>
+                </ul>
+                <p><b>Impact and Achievements:</b> Greenpeace has played a crucial role in several global environmental successes, including the banning of nuclear testing, preventing deforestation, and protecting marine ecosystems. Their efforts have also led to significant policy changes at national and international levels.</p>
+                <p><a href="https://www.greenpeace.org/" target="_blank">Visit Website</a></p>
+            </div>
+            <div class="ngo">
+                <h3 class="point-heading">The Sierra Club</h3>
+                <p>The Sierra Club is one of the oldest and most influential grassroots environmental organizations in the United States. Founded in 1892 by John Muir, the Sierra Club has grown into a large network of volunteers and supporters working to protect the environment.</p>
+                <p><b>Mission and Goals:</b> The Sierra Club's mission is to explore, enjoy, and protect the wild places of the Earth; to practice and promote the responsible use of the Earth's ecosystems and resources; to educate and enlist humanity to protect and restore the quality of the natural and human environment.</p>
+                <p><b>Key Activities:</b></p>
+                <ul>
+                    <li><b>Clean Energy Solutions:</b> The Sierra Club promotes clean energy solutions as a way to combat climate change. Their "Beyond Coal" campaign, for instance, aims to phase out coal plants and transition to renewable energy.</li>
+                    <li><b>Conservation Efforts:</b> The organization works to protect natural areas and wildlife habitats, advocating for the preservation of public lands and wilderness areas.</li>
+                    <li><b>Environmental Justice:</b> The Sierra Club is committed to ensuring that all people, regardless of race or income, have access to clean air, water, and a healthy environment. They work on campaigns to reduce pollution and protect vulnerable communities.</li>
+                    <li><b>Outdoor Activities:</b> They encourage people to explore and enjoy nature through hiking, camping, and other outdoor activities, fostering a deeper connection with the environment.</li>
+                </ul>
+                <p><b>Impact and Achievements:</b> The Sierra Club has been instrumental in passing key environmental legislation, including the Clean Air Act and the Endangered Species Act. They have also been pivotal in the establishment of national parks and wilderness areas.</p>
+                <p><a href="https://www.sierraclub.org/" target="_blank">Visit Website</a></p>
+            </div>
+            <div class="ngo">
+                <h3 class="point-heading">350.org</h3>
+                <p>350.org is a global grassroots climate movement that works to unite people worldwide to address the climate crisis. The name "350" refers to 350 parts per million, the safe concentration of carbon dioxide in the atmosphere, as identified by scientists.</p>
+                <p><b>Mission and Goals:</b> The primary goal of 350.org is to build a global climate movement that can hold leaders accountable to science and justice. They aim to end the use of fossil fuels and support a transition to renewable energy sources.</p>
+                <p><b>Key Activities:</b></p>
+                <ul>
+                    <li><b>Global Campaigns:</b> 350.org organizes worldwide campaigns and events to raise awareness about climate change and the need for urgent action. These include mass mobilizations, local actions, and online campaigns.</li>
+                    <li><b>Divestment Movement:</b> They lead the global divestment campaign, encouraging institutions to divest from fossil fuels and reinvest in renewable energy. This movement has gained significant traction, with many universities, cities, and even countries committing to divest.</li>
+                    <li><b>Climate Education and Advocacy:</b> 350.org educates the public about the science of climate change, the impacts of fossil fuels, and the importance of transitioning to renewable energy. They also advocate for policies that support a just transition to a low-carbon economy.</li>
+                    <li><b>Local and Global Activism:</b> The organization supports local groups and networks in their climate activism efforts, providing resources and training to empower communities to take action.</li>
+                </ul>
+                <p><b>Impact and Achievements:</b> 350.org has successfully mobilized millions of people around the world to take action on climate change. Their divestment campaign has led to significant financial commitments away from fossil fuels, and their advocacy has influenced climate policies at various levels of government.</p>
+                <p><a href="https://350.org/" target="_blank">Visit Website</a></p>
+            </div>
+        </section>
+        
+        <section class="main-section" >
+            <h2>Donation Links</h2>
+            <p>Your support can help these organizations continue their critical work in promoting clean and affordable energy. Donations enable these NGOs to conduct campaigns, raise awareness, and implement projects that advance the transition to sustainable energy systems. Consider donating to:</p>
+            <div id="donation-links">
+                <ul>
+                    <li><a href="#" target="_blank">Donate to Greenpeace</a> - Support their work in advocating for renewable energy and climate action.</li>
+                    <li><a href="#" target="_blank">Donate to The Sierra Club</a> - Help them protect the environment and promote clean energy solutions.</li>
+                    <li><a href="#" target="_blank">Donate to 350.org</a> - Contribute to their global movement for climate justice and a fossil-free future.</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+            
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-left">
+                    <div class="footer-links">  
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Aboutus.html">About Us</a></li>
+                            <li><a href="Quiz.html">Quiz</a></li>
+                            <li><a href="Takeaction.html">Take Action</a></li>
+                        </ul>
+                   
+                        <h3>Reference Links</h3>
+                        <ul>
+                            <li><a href="#">Sustainable Development</a></li>
+                            <li><a href="#">United Nation Development Program</a></li>
+                            <li><a href="#">WorldBank.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-logo">
+                        <img src="https://avatars.githubusercontent.com/u/110486886?s=280&v=4" alt="Logo" class="logo">
+                    </div>
+                    <div class="footer-description">
+                        <p>At Clean Energy Initiative, we strive to promote sustainable and affordable energy solutions. Our mission is to educate, inspire, and empower individuals and communities to adopt green practices. Join us in our journey towards a cleaner, healthier planet. We believe in the power of collective action and the positive impact it can have on our environment. Together, we can make a difference and build a sustainable future for generations to come. Let's work hand in hand to harness the potential of clean energy and make it accessible to all.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Clean Energy Initiative. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('.image');
+        
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // This means 10% of the image should be visible to trigger the observer
+            };
+        
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target); // Stop observing after the image has been shown
+                    }
+                });
+            }, observerOptions);
+        
+            images.forEach(image => {
+                imageObserver.observe(image);
+            });
+        });
+        </script>
+        
+</body>
+</html>
